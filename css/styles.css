@@ -29,6 +29,7 @@ nav {
   top: 0;
   z-index: 5;
   border-bottom: 1px solid rgba(180, 120, 255, 0.25);
+  justify-content: center;
 }
 
 nav a {
@@ -149,6 +150,13 @@ article a:hover {
   margin: auto;
 }
 
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+}
+
 @keyframes float {
   0% { transform: translateY(0); }
   50% { transform: translateY(-6px); }
@@ -170,3 +178,78 @@ article a:hover {
     border-radius: 12px;
 }
 
+/* --- CARD LAYOUT WRAPPER --- */
+article {
+  width: 85%;
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* --- UNIVERSAL CARD STYLE --- */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(120, 40, 255, 0.12);
+  border: 1px solid rgba(170, 94, 255, 0.22);
+  backdrop-filter: blur(8px);
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Card title */
+.card-title {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #4b0099;
+  font-weight: 600;
+}
+
+/* Text inside cards */
+.card p,
+.card li {
+  color: #3a2b4f;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* List spacing */
+.card ul {
+  padding-left: 20px;
+}
+
+/* --- CARD IMAGE STYLE --- */
+.card img.card-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 18px rgba(130, 40, 255, 0.15);
+}
+
+/* Floating mini logo */
+.logo-float {
+  width: 70px;
+  display: block;
+  margin: 0 auto 15px auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animation */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}

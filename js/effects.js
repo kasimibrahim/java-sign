@@ -21,7 +21,7 @@ for (let i = 0; i < 80; i++) {
     particles.push({
         x: Math.random() * pCanvas.width,
         y: Math.random() * pCanvas.height,
-        size: Math.random() * 3 + 1,
+        size: Math.random() * 3 + 4,
         speedX: (Math.random() - 0.5) * 0.7,
         speedY: (Math.random() - 0.5) * 0.7
     });
@@ -58,25 +58,25 @@ wCanvas.height = innerHeight;
 
 let t = 0;
 
-function drawWave() {
-    t += 0.01;
-    wCtx.clearRect(0, 0, wCanvas.width, wCanvas.height);
+// function drawWave() {
+//     t += 0.01;
+//     wCtx.clearRect(0, 0, wCanvas.width, wCanvas.height);
 
-    wCtx.beginPath();
-    wCtx.moveTo(0, wCanvas.height / 2);
+//     wCtx.beginPath();
+//     wCtx.moveTo(0, wCanvas.height / 2);
 
-    for (let x = 0; x < wCanvas.width; x++) {
-        let y =
-            Math.sin(x * 0.008 + t) * 20 +
-            Math.cos(x * 0.01 + t * 2) * 15 +
-            wCanvas.height / 2;
-        wCtx.lineTo(x, y);
-    }
+//     for (let x = 0; x < wCanvas.width; x++) {
+//         let y =
+//             Math.sin(x * 0.008 + t) * 20 +
+//             Math.cos(x * 0.01 + t * 2) * 15 +
+//             wCanvas.height / 2;
+//         wCtx.lineTo(x, y);
+//     }
 
-    wCtx.strokeStyle = "rgba(190,120,255,0.3)";
-    wCtx.lineWidth = 3;
-    wCtx.stroke();
+//     wCtx.strokeStyle = "rgba(190,120,255,0.3)";
+//     wCtx.lineWidth = 3;
+//     wCtx.stroke();
 
-    requestAnimationFrame(drawWave);
-}
+//     requestAnimationFrame(drawWave);
+// }
 drawWave();
