@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lesson 2 Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .question {
+      margin-bottom: 20px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .feedback {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .correct {
+      color: green;
+    }
+
+    .wrong {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Lesson 2 Quiz: Java Concepts</h2>
+
+  <div class="question">
+    <p>1. Which of the following is a correct way to declare a variable in Java?</p>
+    <input type="radio" name="q1" value="a"> int 1number;<br>
+    <input type="radio" name="q1" value="b"> int number;<br>
+    <input type="radio" name="q1" value="c"> number int;<br>
+    <button onclick="checkAnswer('q1', 'b', this)">Check Answer</button>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question">
+    <p>2. Which data type is used to store decimal numbers in Java?</p>
+    <input type="radio" name="q2" value="a"> int<br>
+    <input type="radio" name="q2" value="b"> boolean<br>
+    <input type="radio" name="q2" value="c"> double<br>
+    <button onclick="checkAnswer('q2', 'c', this)">Check Answer</button>
+    <div class="feedback"></div>
+  </div>
+
+  <div class="question">
+    <p>3. Which keyword is used to define a class in Java?</p>
+    <input type="radio" name="q3" value="a"> class<br>
+    <input type="radio" name="q3" value="b"> Class<br>
+    <input type="radio" name="q3" value="c"> define<br>
+    <button onclick="checkAnswer('q3', 'a', this)">Check Answer</button>
+    <div class="feedback"></div>
+  </div>
+
+  <script>
+    function checkAnswer(questionName, correctValue, btn) {
+      const options = document.getElementsByName(questionName);
+      let selected = null;
+      for (const opt of options) {
+        if (opt.checked) {
+          selected = opt.value;
+        }
+      }
+      const feedback = btn.nextElementSibling;
+      if (!selected) {
+        feedback.textContent = "Please select an answer.";
+        feedback.className = "feedback wrong";
+        return;
+      }
+      if (selected === correctValue) {
+        feedback.textContent = "Correct!";
+        feedback.className = "feedback correct";
+      } else {
+        feedback.textContent = `Wrong! The correct answer is "${correctValue}".`;
+        feedback.className = "feedback wrong";
+      }
+    }
+  </script>
+</body>
+
+</html>
