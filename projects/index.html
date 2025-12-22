@@ -1,22 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Project Ideas</title>
-<link rel="stylesheet" href="../css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java Project Ideas</title>
+<link rel="stylesheet" href="../css/projects.css">
 </head>
 <body>
+
+<canvas id="waveCanvas"></canvas>
+<canvas id="particleCanvas"></canvas>
+
 <nav>
   <a href="../index.html">Home</a>
   <a href="../lessons/index.html">Lessons</a>
-  <a href="index.html">Projects</a>
+  <a href="#">Projects</a>
 </nav>
 
-<h2>Java Project Ideas</h2>
-<ul>
-  <a href="./calculator.html"><li>simple calculator in Java.</li></a>
-  <a href="./atm.html"><li>Build a student record management system.</li></a>
-  <a href="./atm.html"><li>Develop a Java program that simulates bank ATM operations.</li></a>
+<div class="hero">
+  <h1>Java Project Ideas</h1>
+  <p>Build your skills with hands-on projects. From beginner to advanced, start coding today!</p>
+</div>
+
+<div class="projects-container">
   
-</ul>
+  <!-- Calculator Project -->
+  <a href="calculator.html" class="project-card reveal">
+    <div class="card-image">🧮</div>
+    <div class="card-content">
+      <h3 class="card-title">Simple Calculator</h3>
+      <p class="card-description">Create a functional calculator that performs basic arithmetic operations including addition, subtraction, multiplication, and division. Perfect for learning Java basics and GUI development.</p>
+      <div class="card-tags">
+        <span class="tag">GUI</span>
+        <span class="tag">Math Operations</span>
+        <span class="tag">Event Handling</span>
+      </div>
+      <span class="card-difficulty difficulty-beginner">Beginner</span>
+    </div>
+  </a>
+
+  <!-- Student Record System -->
+  <a href="student-records.html" class="project-card reveal">
+    <div class="card-image">📚</div>
+    <div class="card-content">
+      <h3 class="card-title">Student Record Management</h3>
+      <p class="card-description">Build a comprehensive system to manage student records including enrollment, grades, attendance, and personal information. Learn about data structures and CRUD operations.</p>
+      <div class="card-tags">
+        <span class="tag">Database</span>
+        <span class="tag">CRUD</span>
+        <span class="tag">File Handling</span>
+      </div>
+      <span class="card-difficulty difficulty-intermediate">Intermediate</span>
+    </div>
+  </a>
+
+  <!-- ATM Simulator -->
+  <a href="atm.html" class="project-card reveal">
+    <div class="card-image">🏦</div>
+    <div class="card-content">
+      <h3 class="card-title">ATM Simulator</h3>
+      <p class="card-description">Develop a banking ATM system that simulates real-world operations like balance inquiry, deposits, withdrawals, and transaction history. Great for understanding authentication and financial logic.</p>
+      <div class="card-tags">
+        <span class="tag">Authentication</span>
+        <span class="tag">Banking Logic</span>
+        <span class="tag">Security</span>
+      </div>
+      <span class="card-difficulty difficulty-intermediate">Intermediate</span>
+    </div>
+  </a>
+
+  <!-- Library Management -->
+  <a href="library.html" class="project-card reveal">
+    <div class="card-image">📖</div>
+    <div class="card-content">
+      <h3 class="card-title">Library Management System</h3>
+      <p class="card-description">Create a system to manage library operations including book inventory, member registration, book issuing, returns, and fine calculations. Perfect for learning OOP concepts.</p>
+      <div class="card-tags">
+        <span class="tag">OOP</span>
+        <span class="tag">Collections</span>
+        <span class="tag">Date Handling</span>
+      </div>
+      <span class="card-difficulty difficulty-intermediate">Intermediate</span>
+    </div>
+  </a>
+
+  <!-- Quiz Application -->
+  <a href="quiz.html" class="project-card reveal">
+    <div class="card-image">❓</div>
+    <div class="card-content">
+      <h3 class="card-title">Quiz Application</h3>
+      <p class="card-description">Build an interactive quiz game with multiple-choice questions, score tracking, and timer functionality. Learn about arrays, loops, and user interaction.</p>
+      <div class="card-tags">
+        <span class="tag">Arrays</span>
+        <span class="tag">Timers</span>
+        <span class="tag">Score System</span>
+      </div>
+      <span class="card-difficulty difficulty-beginner">Beginner</span>
+    </div>
+  </a>
+
+  <!-- Expense Tracker -->
+  <a href="expense-tracker.html" class="project-card reveal">
+    <div class="card-image">💰</div>
+    <div class="card-content">
+      <h3 class="card-title">Expense Tracker</h3>
+      <p class="card-description">Design a personal finance application to track daily expenses, categorize spending, generate reports, and visualize budget data. Great for working with data persistence.</p>
+      <div class="card-tags">
+        <span class="tag">Data Analytics</span>
+        <span class="tag">Charts</span>
+        <span class="tag">File I/O</span>
+      </div>
+      <span class="card-difficulty difficulty-intermediate">Intermediate</span>
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  <p>&copy; 2024 Java Learning Platform. Build. Learn. Grow.</p>
+</footer>
+
+<script src="../js/effects.js"></script>
+
 </body>
 </html>

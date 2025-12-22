@@ -4,30 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lessons</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Lessons - Java Sign Language Learning</title>
+    <link rel="stylesheet" href="../css/lessons.css">
 </head>
 
 <body>
+    
+    <canvas id="waveCanvas"></canvas>
+    <canvas id="particleCanvas"></canvas>
+
     <nav>
         <a href="../index.html">Home</a>
-        <a href="../lessons/index.html">Lessons</a>
+        <a href="index.html">Lessons</a>
         <a href="../projects/index.html">Projects</a>
     </nav>
-    <p>
-        Welcome to the Lessons Page. Here you will find various lessons to help you learn Java through Sign Language.
 
-    </p>
+    <div class="hero">
+        <h1>Java Lessons</h1>
+        <p>Welcome to the Lessons Page. Here you will find various lessons to help you learn Java through Sign Language.</p>
+    </div>
 
-    <ul>
-        <li>
-            <a href="lesson1/lesson1.html">Lesson 0: History of Java Programming Language</a>
-        </li>
-        <li>
-            <a href="lesson2/lesson2.html">Lesson 1: Variables and Data Types</a>
+    <div class="lessons-container">
+        
+        <!-- Lesson 0 -->
+        <a href="lesson1/lesson1.html" class="lesson-card">
+            <div class="lesson-icon">📚</div>
+            <div class="lesson-content">
+                <div class="lesson-number">Lesson 0</div>
+                <div class="lesson-title">History of Java Programming Language</div>
+                <div class="lesson-description">Discover the origins and evolution of Java from its creation to modern applications.</div>
+            </div>
+            <div class="lesson-arrow">→</div>
+        </a>
 
-        </li>
-    </ul>
+        <!-- Lesson 1 -->
+        <a href="lesson2/lesson2.html" class="lesson-card">
+            <div class="lesson-icon">🔤</div>
+            <div class="lesson-content">
+                <div class="lesson-number">Lesson 1</div>
+                <div class="lesson-title">Variables and Data Types</div>
+                <div class="lesson-description">Learn how to declare variables and understand different data types in Java.</div>
+            </div>
+            <div class="lesson-arrow">→</div>
+        </a>
+
+        <!-- Lesson 2 -->
+        <div class="lesson-card coming-soon">
+            <div class="lesson-icon">📊</div>
+            <div class="lesson-content">
+                <div class="lesson-number">Lesson 2</div>
+                <div class="lesson-title">Arrays</div>
+                <div class="lesson-description">Master the fundamentals of arrays and how to work with collections of data.</div>
+            </div>
+            <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+
+        <!-- Lesson 3 -->
+        <div class="lesson-card coming-soon">
+            <div class="lesson-icon">🏗️</div>
+            <div class="lesson-content">
+                <div class="lesson-number">Lesson 3</div>
+                <div class="lesson-title">Abstraction, Inheritance and Polymorphism</div>
+                <div class="lesson-description">Explore advanced OOP concepts essential for building robust Java applications.</div>
+            </div>
+            <span class="coming-soon-badge">Coming Soon</span>
+        </div>
+
+    </div>
+
+    <script src="../js/effects.js"></script>
 
 </body>
 
